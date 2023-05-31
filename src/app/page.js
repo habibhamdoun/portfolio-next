@@ -1,10 +1,6 @@
-'use client';
-import Image from 'next/image';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
-import Head from 'next/head';
-import BouncingArrow from './BouncingArrow';
 import Project from './Project';
 import project1i1 from '../../images/movies-haven-hero.png';
 import project1i2 from '../../images/movies-haven.vercel-hero2.png';
@@ -25,16 +21,8 @@ import Experience from './Experience';
 import exp1i1 from '../../images/Image.jpeg';
 import exp1i2 from '../../images/experienceimage2.jpg';
 import exp1i3 from '../../images/experienceimage3.jpg';
-import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    if (window.screen.width < 768) {
-      setIsMobile(true);
-    }
-  }, []);
   return (
     <>
       <Navbar />
@@ -55,7 +43,6 @@ export default function Home() {
         img4={project1i4}
         websiteLink={'https:/movies-haven.vercel.app/movies'}
         ghlink={'https://github.com/habibhamdoun/moviesHaven'}
-        isMobile={isMobile}
       />
       <Project
         order={2}
@@ -72,7 +59,6 @@ export default function Home() {
         img4={project2i4}
         websiteLink={'https://fmc-supplychain.netlify.app'}
         ghlink={'https://github.com/habibhamdoun/fmc-React'}
-        isMobile={isMobile}
       />
       <Project
         order={3}
@@ -89,7 +75,6 @@ export default function Home() {
         img4={project3i4}
         websiteLink={'https://jsweeper.netlify.app'}
         ghlink={'https://github.com/habibhamdoun/minesweeper'}
-        isMobile={isMobile}
       />
       <Experience
         company={'LOYAC Lebanon'}

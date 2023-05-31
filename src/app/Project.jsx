@@ -15,24 +15,14 @@ const Project = ({
   img2,
   img3,
   img4,
-  isMobile,
 }) => {
   const [readMore, setReadMore] = useState(false);
-  function decision() {
-    if (isMobile) {
-      return 0;
-    }
-    if (order % 2 == 0) {
-      return -1000;
-    } else {
-      return 1000;
-    }
-  }
+
   return (
     <motion.div
       className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2'
-      initial={{ x: () => decision() }}
-      whileInView={{ x: 0 }}
+      initial={{ scale: 0.1 }}
+      whileInView={{ scale: 1 }}
     >
       <h2 className='font-bold text-[1.4rem]'>{title}</h2>
       <p className='w-[40vw]'>

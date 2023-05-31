@@ -51,7 +51,7 @@ const Experience = ({
           className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.5 }}
         >
           <Image
             className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
@@ -63,7 +63,7 @@ const Experience = ({
           className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.8 }}
         >
           <Image
             className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
