@@ -25,30 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-.arrowContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-}
-
-.arrow {
-  width: 24px;
-  height: 24px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-  animation: bounce 1s infinite alternate;
-}
-
-@keyframes bounce {
-  0% {
-    transform: rotate(45deg) translateY(0);
-  }
-  50% {
-    transform: rotate(45deg) translateY(10px);
-  }
-  100% {
-    transform: rotate(45deg) translateY(0);
-  }
-}
-
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+  } 

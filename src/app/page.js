@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import About from './About';
 import Head from 'next/head';
-import BouncingArrow from '../../components/BouncingArrow';
+import BouncingArrow from './BouncingArrow';
 
 export default function Home() {
   return (

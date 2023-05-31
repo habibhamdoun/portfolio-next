@@ -32,7 +32,7 @@ const TypingEffect = () => {
       const cursorElement = document.getElementById('typing-cursor');
       cursorElement.style.opacity =
         cursorElement.style.opacity === '0' ? '1' : '0';
-    }, 500);
+    }, 250);
 
     return () => {
       clearInterval(cursorTimer);

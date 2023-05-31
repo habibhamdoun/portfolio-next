@@ -1,13 +1,16 @@
 'use client';
 import React from 'react';
-import arrow from '../images/chevron-down-solid.svg';
+import arrow from '../../images/chevron-down-solid.svg';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 const BouncingArrow = ({ location }) => {
   return (
-    <div className='flex items-center justify-center h-16 bg-[#f2f2f2]'>
-      <Link href={location}>
+    <div
+      id='arrow'
+      className='flex items-center justify-center h-16 w-16 bg-[#f2f2f2]'
+    >
+      <Link href={location} style={{ scrollBehavior: 'smooth' }}>
         <motion.div
           initial={{
             y: 0,
