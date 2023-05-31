@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import githubOutline from '../../images/github-outline-white.svg';
@@ -15,14 +15,16 @@ const Project = ({
   img2,
   img3,
   img4,
+  scrollRef,
 }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
     <motion.div
-      className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2'
-      initial={{ scale: 0.1 }}
-      whileInView={{ scale: 1 }}
+      className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2 '
+      initial={{ scale: 0.1, translateY: -200 }}
+      whileInView={{ scale: 1, translateY: 0 }}
+      viewport={{ root: scrollRef }}
     >
       <h2 className='font-bold text-[1.4rem]'>{title}</h2>
       <p className='w-[40vw]'>

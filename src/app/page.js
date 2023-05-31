@@ -18,6 +18,7 @@ import project3i3 from '../../images/minesweeper-mediumlvl.png';
 import project3i4 from '../../images/minesweeper-hardlvl.png';
 
 import Experience from './Experience';
+
 import exp1i1 from '../../images/Image.jpeg';
 import exp1i2 from '../../images/experienceimage2.jpg';
 import exp1i3 from '../../images/experienceimage3.jpg';
