@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import githubOutline from '../../images/github-outline-white.svg';
@@ -8,48 +8,69 @@ const Project = ({
   order,
   title,
   content,
+  moreContent,
   websiteLink,
   ghlink,
   img1,
   img2,
   img3,
   img4,
+  isMobile,
 }) => {
+  const [readMore, setReadMore] = useState(false);
+  function decision() {
+    if (isMobile) {
+      return 0;
+    }
+    if (order % 2 == 0) {
+      return -1000;
+    } else {
+      return 1000;
+    }
+  }
   return (
     <motion.div
       className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2'
-      initial={order % 2 == 0 ? { x: -1000 } : { x: 1000 }}
+      initial={{ x: () => decision() }}
       whileInView={{ x: 0 }}
     >
       <h2 className='font-bold text-[1.4rem]'>{title}</h2>
-      <p className='w-[40vw]'>{content}</p>
-      <div className='flex justify-center items-center gap-5 p-3'>
+      <p className='w-[40vw]'>
+        {content} {readMore && moreContent}
+        <button
+          onClick={() => setReadMore((prev) => !prev)}
+          className={'bg-transparent border-0 italic underline px-3'}
+        >
+          {readMore ? 'Read less...' : 'Read more...'}
+        </button>
+      </p>
+      <div className='flex justify-center items-center gap-5 p-3 max-[770px]:flex-col'>
         <Image
-          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px]'
+          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img1}
         ></Image>
         <Image
-          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px]'
+          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img2}
         ></Image>
         <Image
-          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px]'
+          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img3}
         ></Image>
         <Image
-          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px]'
+          className='aspect-square w-full max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img4}
         ></Image>
       </div>
       <div className='flex justify-center gap-8'>
         <a
-          className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out'
+          className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out max-[700px]:text-[0.8rem]'
           href={websiteLink}
         >
           Live website
         </a>
         <a
-          className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out'
+          className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out max-[700px]:text-[0.8rem]'
           href={ghlink}
         >
           <div className='flex items-center gap-2'>

@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Navbar from './Navbar';
 import Hero from './Hero';
@@ -24,8 +25,16 @@ import Experience from './Experience';
 import exp1i1 from '../../images/Image.jpeg';
 import exp1i2 from '../../images/experienceimage2.jpg';
 import exp1i3 from '../../images/experienceimage3.jpg';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (window.screen.width < 768) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
     <>
       <Navbar />
@@ -35,7 +44,10 @@ export default function Home() {
         order={1}
         title={'Movies Haven'}
         content={
-          'Discover and explore a dynamic movie showcase powered by Next.js and the TMDB API. Experience a constantly updated collection of movies, featuring the latest releases, popular films, and timeless classics. With automatic updates and seamless navigation, this website brings the world of cinema to your fingertips.'
+          'Discover and explore a dynamic movie showcase powered by Next.js and the TMDB API. Experience a constantly updated collection of movies, featuring the latest releases, popular films, and timeless classics.'
+        }
+        moreContent={
+          'With automatic updates and seamless navigation, this website brings the world of cinema to your fingertips.'
         }
         img1={project1i1}
         img2={project1i2}
@@ -43,12 +55,16 @@ export default function Home() {
         img4={project1i4}
         websiteLink={'https:/movies-haven.vercel.app/movies'}
         ghlink={'https://github.com/habibhamdoun/moviesHaven'}
+        isMobile={isMobile}
       />
       <Project
         order={2}
         title={'FMC supplychain'}
         content={
-          "Welcome to our supply chain company website! Powered by React.js and Firebase, we've developed a cutting-edge platform for efficient supply chain management. Engage in real-time communication through our interactive messaging system, connecting clients and administrators seamlessly. With language change functionality, our website caters to diverse audiences across the globe. Experience the convenience of our secure admin panel, empowering administrators to oversee operations and ensure smooth workflows. Join us on this digital transformation journey as we revolutionize supply chain collaboration and enhance business efficiency."
+          "Welcome to our supply chain company website! Powered by React.js and Firebase, we've developed a cutting-edge platform for efficient supply chain management."
+        }
+        moreContent={
+          ' Engage in real-time communication through our interactive messaging system, connecting clients and administrators seamlessly. With language change functionality, our website caters to diverse audiences across the globe. Experience the convenience of our secure admin panel, empowering administrators to oversee operations and ensure smooth workflows. Join us on this digital transformation journey as we revolutionize supply chain collaboration and enhance business efficiency.'
         }
         img1={project2i1}
         img2={project2i2}
@@ -56,12 +72,16 @@ export default function Home() {
         img4={project2i4}
         websiteLink={'https://fmc-supplychain.netlify.app'}
         ghlink={'https://github.com/habibhamdoun/fmc-React'}
+        isMobile={isMobile}
       />
       <Project
         order={3}
         title={'MineSweeper'}
         content={
-          "Welcome to the world of Minesweeper! Immerse yourself in this thrilling game, personally crafted from scratch using vanilla HTML, CSS, and JavaScript. With a unique comic book theme, the game offers a visually engaging experience. Discover the excitement of uncovering tiles while avoiding hidden mines, all powered by meticulousl handcrafted logic. If you're new to Minesweeper, don't worry! We provide a helpful tutorial to guide you through the game's mechanics. Choose from three levels of difficulty to match your skills and challenge yourself. Get ready for an addictive adventure as you delve into the world of Minesweeper!"
+          'Welcome to the world of Minesweeper! Immerse yourself in this thrilling game, personally crafted from scratch using vanilla HTML, CSS, and JavaScript. With a unique comic book theme, the game offers a visually engaging experience.'
+        }
+        moreContent={
+          "Discover the excitement of uncovering tiles while avoiding hidden mines, all powered by meticulousl handcrafted logic. If you're new to Minesweeper, don't worry! We provide a helpful tutorial to guide you through the game's mechanics. Choose from three levels of difficulty to match your skills and challenge yourself. Get ready for an addictive adventure as you delve into the world of Minesweeper!"
         }
         img1={project3i1}
         img2={project3i2}
@@ -69,6 +89,7 @@ export default function Home() {
         img4={project3i4}
         websiteLink={'https://jsweeper.netlify.app'}
         ghlink={'https://github.com/habibhamdoun/minesweeper'}
+        isMobile={isMobile}
       />
       <Experience
         company={'LOYAC Lebanon'}

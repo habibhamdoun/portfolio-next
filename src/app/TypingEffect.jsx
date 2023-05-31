@@ -43,9 +43,12 @@ const TypingEffect = () => {
     <div>
       <span
         id='typing-effect'
-        className='text-[2.2rem] font-bold whitespace-pre overflow-hidden'
+        className='text-[2.2rem] font-bold whitespace-pre overflow-hidden max-[770px]:text-2xl max-[500px]:text-xl'
       />
-      <span id='typing-cursor' className='text-[2.2rem]'>
+      <span
+        id='typing-cursor'
+        className='text-[2.2rem] max-[770px]:text-2xl max-[500px]:text-xl'
+      >
         |
       </span>
     </div>

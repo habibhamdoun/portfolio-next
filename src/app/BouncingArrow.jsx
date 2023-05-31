@@ -16,7 +16,7 @@ const BouncingArrow = ({ location }) => {
             y: 0,
           }}
           animate={{
-            y: [-20, 20, -20],
+            y: [-20, 10, -20],
           }}
           transition={{
             duration: 1,
@@ -25,7 +25,7 @@ const BouncingArrow = ({ location }) => {
             repeatType: 'reverse',
           }}
         >
-          <Image src={arrow} className='w-8 h-8'></Image>
+          <Image src={arrow} className='w-8 h-8 mb-2'></Image>
         </motion.div>
       </Link>
     </div>

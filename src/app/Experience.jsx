@@ -34,42 +34,42 @@ const Experience = ({
         </a>
       </div>
       <h4 className='text-lg'>{position}</h4>
-      <div className='flex justify-center items-center gap-2'>
+      <div className='flex max-[770px]:flex-col justify-center items-center gap-2'>
         <motion.div
-          className='flex flex-col justify-center items-center gap-4 '
+          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
           <Image
-            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px]'
+            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
             src={img1}
           ></Image>
-          <p className='w-[70%]'>{role1}</p>
+          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role1}</p>
         </motion.div>
         <motion.div
-          className='flex flex-col justify-center items-center w-1/2'
+          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.2 }}
         >
           <Image
-            className='w-[25vw] h-[50vh] aspect-square  object-cover mb-2.5 rounded-[5px]'
+            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
             src={img2}
           ></Image>
-          <p className='w-[70%]'> {role2}</p>
+          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role2}</p>
         </motion.div>
         <motion.div
-          className='flex flex-col justify-center items-center w-1/2'
+          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
         >
           <Image
-            className='w-[25vw] h-[50vh] aspect-square  object-cover mb-2.5 rounded-[5px]'
+            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
             src={img3}
           ></Image>
-          <p className='w-[70%]'>{role3}</p>
+          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role3}</p>
         </motion.div>
       </div>
     </div>
