@@ -15,7 +15,7 @@ const Hero = () => {
           <motion.h2
             initial={{ x: -1000 }}
             animate={{ x: 0 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 1, delay: 1.2 }}
             className='text-center text-[1.2rem]'
           >
             Passionate front-end developer crafting <br /> exceptional web
@@ -25,7 +25,7 @@ const Hero = () => {
         <motion.div
           initial={{ x: 1000 }}
           animate={{ x: 0 }}
-          transition={{ duration: 1, delay: 1.5 }}
+          transition={{ duration: 1, delay: 1.2 }}
         >
           <Image
             className='h-[600px] w-[600px] rounded-full'

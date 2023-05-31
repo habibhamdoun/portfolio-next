@@ -15,7 +15,7 @@ const About = () => {
   return (
     <>
       <div
-        className='bg-[#f2f2f2]  text-black flex flex-col justify-center items-center gap-3'
+        className='my-2 p-5 bg-[#f2f2f2]  text-black flex flex-col justify-center items-center gap-3'
         id='about'
       >
         <h2 className='text-lg font-bold'>About Me</h2>
