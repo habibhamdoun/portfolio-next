@@ -28,7 +28,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 1.2 }}
         >
           <Image
-            className='h-[600px] w-[600px] max-[770px]:h-[50vw] max-[770px]:w-[50vw]  rounded-full'
+            className='shadow-[12px_12px_5px_0px_rgba(191,177,177,0.75)] relative h-[600px] w-[600px] max-[770px]:h-[50vw] max-[770px]:w-[50vw]  rounded-full'
             src={profile}
           ></Image>
         </motion.div>

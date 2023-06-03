@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const TypingEffect = () => {
   const [index, setIndex] = useState(0);
-  const text = '<Welcome> to my humble portfolio </Enjoy>';
+  const text = '<Welcome> to my portfolio </Enjoy>';
 
   useEffect(() => {
     const typingEffect = document.getElementById('typing-effect');
@@ -43,7 +43,7 @@ const TypingEffect = () => {
     <div>
       <span
         id='typing-effect'
-        className='text-[2.2rem] font-bold whitespace-pre overflow-hidden max-[770px]:text-2xl max-[500px]:text-xl'
+        className='text-[2rem] font-bold whitespace-pre overflow-hidden max-[770px]:text-2xl max-[500px]:text-xl'
       />
       <span
         id='typing-cursor'

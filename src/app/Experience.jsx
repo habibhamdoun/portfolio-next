@@ -21,18 +21,15 @@ const Experience = ({
     <div className='bg-[#f2f2f2] flex flex-col justify-center items-center text-black gap-5 py-2 my-3'>
       <h2 className='text-2xl font-bold text-black'>Experience</h2>
       <h3 className='text-xl font-bold text-black'>{company}</h3>
-      <div className='flex items-center justify-center'>
-        <Image className='w-4 h-4' src={IGicon}></Image>:{' '}
+      <div className='flex items-center justify-center gap-4'>
         <a href='https://instagram.com/loyac.lebanon' target='_blank'>
-          {IG}
+          <Image className='w-6 h-6' src={IGicon}></Image>{' '}
         </a>
-      </div>
-      <div className='flex items-center justify-center'>
-        <Image className='w-4 h-4' src={emailIcon}></Image>:
         <a href='mailto:loyac@gmail.com' target='_blank'>
-          {email}
+          <Image className='w-6 h-6' src={emailIcon}></Image>
         </a>
       </div>
+
       <h4 className='text-lg'>{position}</h4>
       <div className='flex max-[770px]:flex-col justify-center items-center gap-2'>
         <motion.div
