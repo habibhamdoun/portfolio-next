@@ -6,6 +6,7 @@ import github from '../../images/github.svg';
 import githubOutline from '../../images/github-outline.svg';
 import linkedin from '../../images/linkedin.svg';
 import linkedinOutline from '../../images/linkedin-outline.svg';
+import cvIcon from '../../images/cv-icon.svg';
 import Image from 'next/image';
 
 const About = () => {
@@ -76,6 +77,16 @@ const About = () => {
               ></Image>
             </a>
           </div>
+          <a
+            href='/Habib_Hamdoun_CV.pdf'
+            download={true}
+            alt='alt text'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='download CV'
+          >
+            <Image src={cvIcon} className='w-6 h-6'></Image>
+          </a>
         </div>
       </div>
     </>

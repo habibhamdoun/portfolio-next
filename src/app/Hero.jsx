@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col items-center justify-center bg-[#f2f2f2] h-[100vh] gap-8'>
+    <div className='flex flex-col items-center justify-center bg-[#f2f2f2] h-[95vh] gap-8'>
       <div className='flex flex-col items-center justify-around gap-6 bg-[#f2f2f2] text-black p-5'>
         <div className='flex flex-col items-center justify-center gap-2'>
           <TypingEffect />

@@ -16,6 +16,7 @@ const Project = ({
   img3,
   img4,
   scrollRef,
+  LiveWebsite,
 }) => {
   const [readMore, setReadMore] = useState(false);
 
@@ -59,12 +60,14 @@ const Project = ({
         <a
           className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out max-[700px]:text-[0.8rem]'
           href={websiteLink}
+          target='_blank'
         >
-          Live website
+          {LiveWebsite}
         </a>
         <a
           className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out max-[700px]:text-[0.8rem]'
           href={ghlink}
+          target='_blank'
         >
           <div className='flex items-center gap-2'>
             {' '}

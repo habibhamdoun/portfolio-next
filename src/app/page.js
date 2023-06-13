@@ -42,7 +42,8 @@ export default function Home() {
         img2={project1i2}
         img3={project1i3}
         img4={project1i4}
-        websiteLink={'https:/movies-haven.vercel.app/movies'}
+        LiveWebsite={'Live website'}
+        websiteLink={'https://movies-haven.vercel.app/'}
         ghlink={'https://github.com/habibhamdoun/moviesHaven'}
       />
       <Project
@@ -58,6 +59,7 @@ export default function Home() {
         img2={project2i2}
         img3={project2i3}
         img4={project2i4}
+        LiveWebsite={'Live website'}
         websiteLink={'https://fmc-supplychain.netlify.app'}
         ghlink={'https://github.com/habibhamdoun/fmc-React'}
       />
@@ -74,7 +76,8 @@ export default function Home() {
         img2={project3i2}
         img3={project3i3}
         img4={project3i4}
-        websiteLink={'https://jsweeper.netlify.app'}
+        LiveWebsite={'Live website is under construction :/'}
+        websiteLink={''}
         ghlink={'https://github.com/habibhamdoun/minesweeper'}
       />
       <Experience
