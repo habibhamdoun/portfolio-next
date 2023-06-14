@@ -76,8 +76,8 @@ export default function Home() {
         img2={project3i2}
         img3={project3i3}
         img4={project3i4}
-        LiveWebsite={'Live website is under construction :/'}
-        websiteLink={''}
+        LiveWebsite={'Live website'}
+        websiteLink={'https://jsweeper.netlify.app/'}
         ghlink={'https://github.com/habibhamdoun/minesweeper'}
       />
       <Experience
