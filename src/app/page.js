@@ -84,7 +84,11 @@ export default function Home() {
         company={'LOYAC Lebanon'}
         IG={'loyac.lebanon'}
         email={'loyac@gmail.com'}
-        position={'Trainer'}
+        timeStamp1={
+          'Assistant Trainer : HTML ,CSS ,JavaScript {11/2021-6/2022}'
+        }
+        timeStamp2={'Co-Trainer : OOP in JavaScript ,ReactJS {6/2022-9/2022}'}
+        timeStamp3={'Trainer : HTML ,CSS ,JavaScript {6/2022-6/2023}'}
         img1={exp1i1}
         img2={exp1i2}
         img3={exp1i3}
