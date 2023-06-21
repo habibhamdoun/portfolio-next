@@ -30,43 +30,58 @@ const Experience = ({
         </a>
       </div>
 
-      <h4 className='text-lg'>{position}</h4>
-      <div className='flex max-[770px]:flex-col justify-center items-center gap-2'>
+      <h4 className='text-base'>{position}</h4>
+      <div className='flex max-[1000px]:flex-col justify-center items-start gap-8'>
         <motion.div
-          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
+          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
+          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] '>
+            Assistant Trainer : HTML ,CSS ,JavaScript{'{11/2021-6/2022}'}
+          </div>
           <Image
-            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
+            className='w-[28vw] h-[50vh] aspect-square object-cover rounded-t-[5px] max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img1}
           ></Image>
-          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role1}</p>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 max-[1000px]:text-[0.8rem] max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+            {role1}
+          </p>
         </motion.div>
         <motion.div
-          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
+          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.4 }}
         >
+          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] '>
+            Co-Trainer : OOP in JavaScript ,ReactJS{'{6/2022-9/2022}'}
+          </div>
           <Image
-            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
+            className='w-[28vw] h-[50vh] aspect-square object-cover rounded-t-[5px] max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img2}
           ></Image>
-          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role2}</p>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 max-[1000px]:text-[0.8rem] max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+            {role2}
+          </p>
         </motion.div>
         <motion.div
-          className='flex flex-col justify-center items-center gap-4 min-[770px]:w-[33%] '
+          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.6 }}
         >
+          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] '>
+            Trainer : HTML ,CSS ,JavaScript{'{6/2022-6/2023}'}
+          </div>
           <Image
-            className='w-[25vw] h-[50vh] aspect-square object-cover mb-2.5 rounded-[5px] max-[770px]:w-[400px] max-[770px]:h-[400px]'
+            className='w-[28vw] h-[50vh] aspect-square object-cover rounded-t-[5px] max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img3}
           ></Image>
-          <p className='w-[70%] max-[770px]:text-[0.8rem]'>{role3}</p>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 max-[1000px]:text-[0.8rem] max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+            {role3}
+          </p>
         </motion.div>
       </div>
     </div>

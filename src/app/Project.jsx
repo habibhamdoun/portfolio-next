@@ -23,9 +23,9 @@ const Project = ({
   return (
     <motion.div
       className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2 '
-      initial={{ opacity: 0, translateY: 200 }}
+      initial={{ opacity: 0, translateY: 300 }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      viewport={{ root: scrollRef }}
+      viewport={{ once: true, root: scrollRef }}
       transition={{ duration: 0.5 }}
     >
       <h2 className='font-bold text-[1.4rem]'>{title}</h2>
