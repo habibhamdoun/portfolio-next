@@ -78,7 +78,7 @@ const Experience = ({
             className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img1}
           ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[600px]:text-base'>
             {role1}
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ const Experience = ({
             className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img2}
           ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[600px]:text-base'>
             {role2}
           </p>
         </motion.div>
@@ -112,7 +112,7 @@ const Experience = ({
             className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
             src={img3}
           ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
+          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl max-[600px]:text-base bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
             {role3}
           </p>
         </motion.div>
