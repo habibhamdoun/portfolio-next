@@ -1,10 +1,11 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import IGicon from '../../images/instagram.svg';
 import emailIcon from '../../images/email.svg';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import arrow from '../../images/circle-arrow-down-solid.svg';
+import Card from './Card';
 
 const Experience = ({
   company,
@@ -22,6 +23,17 @@ const Experience = ({
   img3,
 }) => {
   const [contact, setContact] = useState(false);
+  const [isHighlighted, setIsHighlighted] = useState(2);
+  function toggleHighlight(e) {
+    setIsHighlighted(e.target.id);
+  }
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.screen.width < 768) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
     <div className='bg-[#f2f2f2] flex flex-col justify-center items-center text-black gap-5 py-2 my-3 transition-all'>
       <h2 className='text-2xl font-bold text-black'>Experience</h2>
@@ -65,57 +77,36 @@ const Experience = ({
         </motion.div>
       )}
       <div className='flex max-[1000px]:flex-col justify-center items-start gap-8'>
-        <motion.div
-          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
-          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] flex items-center justify-center '>
-            {timeStamp1}
-          </div>
-          <Image
-            className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
-            src={img1}
-          ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[600px]:text-base'>
-            {role1}
-          </p>
-        </motion.div>
-        <motion.div
-          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] flex items-center justify-center '>
-            {timeStamp2}
-          </div>
-          <Image
-            className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
-            src={img2}
-          ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[600px]:text-base'>
-            {role2}
-          </p>
-        </motion.div>
-        <motion.div
-          className='flex flex-col justify-center items-center min-[1000px]:w-[33%]'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-        >
-          <div className='bg-[#d6d5d5] w-[28vw] h-[8vh] rounded-t-[5px]  text-base px-4 py-3 max-[1000px]:w-[50vw] max-[600px]:w-[60vw] flex items-center justify-center '>
-            {timeStamp3}
-          </div>
-          <Image
-            className='w-[28vw] h-[50vh] aspect-square object-cover max-[1000px]:w-[50vw] max-[600px]:w-[60vw] max-[1000px]:h-[400px]'
-            src={img3}
-          ></Image>
-          <p className='w-[28vw] rounded-b-lg h-[20vh] p-5 text-lg max-[1000px]:text-xl max-[600px]:text-base bg-[#d0d0ce] text-black max-[1000px]:w-[50vw] max-[600px]:w-[60vw]'>
-            {role3}
-          </p>
-        </motion.div>
+        <Card
+          title={timeStamp1}
+          text={role1}
+          img={img1}
+          animationDelay={0.2}
+          id={1}
+          isHighlighted={isHighlighted}
+          onHover={toggleHighlight}
+          isMobile={isMobile}
+        />
+        <Card
+          title={timeStamp2}
+          text={role2}
+          img={img2}
+          animationDelay={0.4}
+          id={2}
+          isHighlighted={isHighlighted}
+          onHover={toggleHighlight}
+          isMobile={isMobile}
+        />
+        <Card
+          title={timeStamp3}
+          text={role3}
+          img={img3}
+          animationDelay={0.6}
+          id={3}
+          isHighlighted={isHighlighted}
+          onHover={toggleHighlight}
+          isMobile={isMobile}
+        />
       </div>
     </div>
   );
