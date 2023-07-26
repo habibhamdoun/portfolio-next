@@ -5,28 +5,30 @@ import Image from 'next/image';
 import githubOutline from '../../images/github-outline-white.svg';
 
 const Project = ({
-  order,
   title,
   content,
   moreContent,
   websiteLink,
   ghlink,
+  LiveWebsite,
   img1,
   img2,
   img3,
   img4,
   scrollRef,
-  LiveWebsite,
+  id,
+  orientation,
 }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
     <motion.div
-      className='bg-[#f1f1f1] text-black text-center flex flex-col justify-center items-center p-5 my-2 '
-      initial={{ opacity: 0, translateY: 300 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
+      className='bg-[#f1f1f1] min-[1000px]:h-[45vh] text-black text-center flex flex-col justify-center items-center p-5 my-2 '
+      initial={{ opacity: 0, translateX: orientation == 'right' ? -200 : 200 }}
+      whileInView={{ opacity: 1, translateX: 0 }}
       viewport={{ once: true, root: scrollRef }}
       transition={{ duration: 0.5 }}
+      id={id}
     >
       <h2 className='font-bold text-[1.4rem]'>{title}</h2>
       <p className='w-[40vw]'>

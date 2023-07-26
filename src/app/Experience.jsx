@@ -23,7 +23,7 @@ const Experience = ({
   img3,
 }) => {
   const [contact, setContact] = useState(false);
-  const [isHighlighted, setIsHighlighted] = useState(2);
+  const [isHighlighted, setIsHighlighted] = useState(1);
   function toggleHighlight(e) {
     setIsHighlighted(e.target.id);
   }
@@ -51,7 +51,7 @@ const Experience = ({
       </div>
       {contact && (
         <motion.div
-          className='flex flex-col items-center justify-center gap-4'
+          className='flex flex items-center justify-center gap-4'
           initial={{ translateY: -10, opacity: 0 }}
           animate={{
             translateY: 0,
