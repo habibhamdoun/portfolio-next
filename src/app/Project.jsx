@@ -23,7 +23,7 @@ const Project = ({
 
   return (
     <motion.div
-      className='bg-[#f1f1f1] min-[1000px]:h-[45vh] text-black text-center flex flex-col justify-center items-center p-5 my-2 '
+      className='bg-[#f1f1f1] min-[1000px]:h-fit text-black text-center flex flex-col justify-center items-center p-5 my-2 '
       initial={{ opacity: 0, translateX: orientation == 'right' ? -200 : 200 }}
       whileInView={{ opacity: 1, translateX: 0 }}
       viewport={{ once: true, root: scrollRef }}
