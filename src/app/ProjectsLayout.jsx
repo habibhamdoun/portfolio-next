@@ -125,14 +125,29 @@ const ProjectsLayout = () => {
       </div>
       <div className='w-[100vw] flex justify-center bg-[#f1f1f1] py-3'>
         <Image
+          onClick={() => {
+            if (page > 0) setOrientation('left');
+            else setOrientation('right');
+            setPage(0);
+          }}
           className='w-[10px] h-[10px]'
           src={page == 0 ? filledDot : dot}
         ></Image>
         <Image
+          onClick={() => {
+            if (page > 1) setOrientation('left');
+            else setOrientation('right');
+            setPage(1);
+          }}
           className='w-[10px] h-[10px]'
           src={page == 1 ? filledDot : dot}
         ></Image>
         <Image
+          onClick={() => {
+            if (page > 2) setOrientation('left');
+            else setOrientation('right');
+            setPage(2);
+          }}
           className='w-[10px] h-[10px]'
           src={page == 2 ? filledDot : dot}
         ></Image>
