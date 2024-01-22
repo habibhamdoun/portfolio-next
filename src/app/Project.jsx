@@ -42,19 +42,19 @@ const Project = ({
       </p>
       <div className='flex justify-center items-center gap-5 p-3 max-[770px]:flex-col'>
         <Image
-          className='aspect-square w-full max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
+          className='aspect-square w-[15vw] max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img1}
         ></Image>
         <Image
-          className='aspect-square w-full max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
+          className='aspect-square w-[15vw] max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img2}
         ></Image>
         <Image
-          className='aspect-square w-full max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
+          className='aspect-square w-[15vw] max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img3}
         ></Image>
         <Image
-          className='aspect-square w-full max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
+          className='aspect-square w-[15vw] max-[700px]:w-[25vw] max-[700px]:h-[100px] max-h-[200px] object-cover mb-2.5 rounded-[5px] max-[770px]:h-[300px] max-[770px]:w-[300px]'
           src={img4}
         ></Image>
       </div>
