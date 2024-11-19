@@ -58,7 +58,7 @@ const Project = ({
           src={img4}
         ></Image>
       </div>
-      <div className='flex justify-center gap-8'>
+      <div className='flexr justify-center gap-8'>
         <a
           className='bg-gray-400 text-gray-100 py-2 px-4 rounded hover:bg-gray-600 transition-colors duration-300 ease-in-out max-[700px]:text-[0.8rem]'
           href={websiteLink}
